@@ -1,0 +1,60 @@
+# k8s/pipeline.yaml: Namespace and Shard Workers for parallel teacher labelling
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: pipeline
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: teacher-worker-shard-0
+  namespace: pipeline
+spec:
+  template:
+    metadata:
+      labels:
+        job: teacher-worker
+        shard: "0"
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: worker
+          image: localhost:5001/pipeline-worker:latest
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: SHARD_INDEX
+              value: "0"
+            - name: SHARD_COUNT
+              value: "2"
+            - name: TEACHER_ENDPOINT
+              value: "http://ollama.data.svc.cluster.local:11434/api/generate"
+            - name: S3_ENDPOINT
+              value: "http://seaweedfs.data.svc.cluster.local:8333"
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: teacher-worker-shard-1
+  namespace: pipeline
+spec:
+  template:
+    metadata:
+      labels:
+        job: teacher-worker
+        shard: "1"
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: worker
+          image: localhost:5001/pipeline-worker:latest
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: SHARD_INDEX
+              value: "1"
+            - name: SHARD_COUNT
+              value: "2"
+            - name: TEACHER_ENDPOINT
+              value: "http://ollama.data.svc.cluster.local:11434/api/generate"
+            - name: S3_ENDPOINT
+              value: "http://seaweedfs.data.svc.cluster.local:8333"
+
