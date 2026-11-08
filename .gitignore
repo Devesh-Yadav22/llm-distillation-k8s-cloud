@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Model weights and binaries (per instructions: store in object storage and Release assets, never commit)
+*.bin
+*.pt
+*.safetensors
+*.onnx
+models/v1/*.safetensors
+models/v1/*.bin
+models/v2/*.safetensors
+models/v2/*.bin
+
+# Final zip archives (submit separately)
+*.zip
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary and test artifacts
+tmp/
+temp/
+test_*.pdf
+test_*.html
+*.log
