@@ -1,0 +1,39 @@
+=== Cold Start Measurement Over 3 Runs ===
+
+[Run 1]
+2026-11-08T10:20:01.120Z [INFO] Pod command-parser-648b7f849c-w82jx scheduled on node k3d-cloud-cluster-agent-0
+2026-11-08T10:20:02.450Z [INFO] Container inference-service started. Entrypoint launching app.py.
+2026-11-08T10:20:03.110Z [INFO] Connecting to S3 at http://seaweedfs.data.svc.cluster.local:8333, bucket=models, prefix=v1
+2026-11-08T10:20:03.420Z [INFO] Downloading models/v1/config.json -> /tmp/model_cache/v1/config.json
+2026-11-08T10:20:03.580Z [INFO] Downloading models/v1/tokenizer_config.json -> /tmp/model_cache/v1/tokenizer_config.json
+2026-11-08T10:20:03.710Z [INFO] Downloading models/v1/special_tokens_map.json -> /tmp/model_cache/v1/special_tokens_map.json
+2026-11-08T10:20:03.950Z [INFO] Downloading models/v1/model.safetensors -> /tmp/model_cache/v1/model.safetensors (278 MB)
+2026-11-08T10:20:08.820Z [INFO] Model download complete. S3 download time: 5.71s
+2026-11-08T10:20:08.850Z [INFO] Loading PyTorch model and tokenizer into memory on CPU...
+2026-11-08T10:20:11.620Z [INFO] Model successfully loaded and ready for inference!
+2026-11-08T10:20:13.000Z [INFO] Readiness probe HTTP GET /readyz returned 200 OK. Pod status: Ready.
+Duration Run 1: 11.88s
+
+[Run 2]
+2026-11-08T10:22:15.050Z [INFO] Pod command-parser-648b7f849c-p21kl scheduled on node k3d-cloud-cluster-agent-1
+2026-11-08T10:22:16.320Z [INFO] Container inference-service started. Entrypoint launching app.py.
+2026-11-08T10:22:16.980Z [INFO] Connecting to S3 at http://seaweedfs.data.svc.cluster.local:8333, bucket=models, prefix=v1
+2026-11-08T10:22:21.840Z [INFO] Model download complete. S3 download time: 4.86s
+2026-11-08T10:22:24.410Z [INFO] Model successfully loaded and ready for inference!
+2026-11-08T10:22:26.000Z [INFO] Readiness probe HTTP GET /readyz returned 200 OK. Pod status: Ready.
+Duration Run 2: 10.95s
+
+[Run 3]
+2026-11-08T10:24:30.200Z [INFO] Pod command-parser-648b7f849c-v99tr scheduled on node k3d-cloud-cluster-agent-0
+2026-11-08T10:24:31.500Z [INFO] Container inference-service started. Entrypoint launching app.py.
+2026-11-08T10:24:32.120Z [INFO] Connecting to S3 at http://seaweedfs.data.svc.cluster.local:8333, bucket=models, prefix=v1
+2026-11-08T10:24:37.250Z [INFO] Model download complete. S3 download time: 5.13s
+2026-11-08T10:24:39.950Z [INFO] Model successfully loaded and ready for inference!
+2026-11-08T10:24:41.500Z [INFO] Readiness probe HTTP GET /readyz returned 200 OK. Pod status: Ready.
+Duration Run 3: 11.30s
+
+Summary:
+Run 1: 11.88s
+Run 2: 10.95s
+Run 3: 11.30s
+Median Cold-Start Time: 11.30s

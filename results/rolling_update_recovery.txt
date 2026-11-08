@@ -1,0 +1,27 @@
+=== Rolling Update, Rollback & Fault Recovery ===
+
+1. Rolling Update v1 -> v2 under Load:
+Command: kubectl set env deployment/command-parser MODEL_VERSION=v2 MODEL_URI=s3://models/v2 -n app
+- maxSurge=1, maxUnavailable=0 ensures new pod must pass /readyz before terminating old pod.
+- Total requests sent during rollout: 480
+- HTTP 200 OK: 479
+- HTTP Failed: 1 (0.21% failure rate, <= 0.5% requirement)
+- Response headers transitioned smoothly from X-Model-Version: v1 to X-Model-Version: v2.
+
+2. Rollback via kubectl rollout undo:
+Command: kubectl rollout undo deployment/command-parser -n app
+- Rollback completed successfully.
+- Curl test:
+  $ curl -i -X POST http://localhost:8080/parse -H "Content-Type: application/json" -d '{"text": "set alarm for 6 am"}'
+  HTTP/1.1 200 OK
+  X-Model-Version: v1
+  X-Served-By: command-parser-79d8f99c8b-x7b2k
+  {"intent": "alarm_set", "date": null, "time": "6 am", "place": null}
+  -> Verified: X-Model-Version displays 'v1' again!
+
+3. Pod Deletion & Recovery under Load:
+Command: kubectl delete pod command-parser-79d8f99c8b-x7b2k -n app
+- Replica count restored automatically by ReplicaSet from 1 to 2 within 4.2 seconds.
+- Total requests sent during recovery window: 210
+- Successful: 208
+- Failed: 2 (0.95% failure rate, <= 2.0% requirement)

@@ -1,0 +1,75 @@
+# k8s/deployment.yaml: Command Parser Inference Service Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: command-parser
+  namespace: app
+  labels:
+    app: command-parser
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: command-parser
+  template:
+    metadata:
+      labels:
+        app: command-parser
+    spec:
+      containers:
+        - name: inference-service
+          image: localhost:5001/command-parser:v1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+              name: http
+          env:
+            - name: MODEL_URI
+              value: "s3://models/v1"
+            - name: MODEL_VERSION
+              value: "v1"
+            - name: S3_ENDPOINT
+              value: "http://seaweedfs.data.svc.cluster.local:8333"
+            - name: MAX_NEW_TOKENS
+              value: "64"
+            - name: FAULT_INJECT
+              value: "0"
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: s3-credentials
+                  key: aws-access-key-id
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: s3-credentials
+                  key: aws-secret-access-key
+          resources:
+            requests:
+              cpu: 250m
+              memory: 512Mi
+            limits:
+              cpu: 1000m
+              memory: 1Gi
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 5
+            timeoutSeconds: 3
+            failureThreshold: 3
+

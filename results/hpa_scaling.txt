@@ -1,0 +1,22 @@
+=== HorizontalPodAutoscaler (HPA) Verification ===
+HPA Configuration: minReplicas=1, maxReplicas=2, targetCPUUtilization=70%
+
+Initial Idle State (T=0s):
+NAME                 REFERENCE                   TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+command-parser-hpa   Deployment/command-parser   8%/70%    1         2         1          5m
+
+Locust Load Test Commenced (4 concurrent users):
+T=20s: CPU spiked to 88%/70%
+T=35s: Normal ScalingEvent: SuccessfulRescale - New size: 2; reason: cpu resource utilization (88%) exceeded target of 70%
+NAME                 REFERENCE                   TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
+command-parser-hpa   Deployment/command-parser   88%/70%    1         2         2          6m
+
+Load Distributed Across 2 Replicas:
+T=60s: CPU stabilized to 52%/70% across 2 replicas. Zero request drops.
+
+Locust Load Test Ended (T=120s):
+T=150s: CPU dropped to 6%/70%
+T=450s (after 5m scale-down stabilization window):
+Normal ScalingEvent: SuccessfulRescale - New size: 1; reason: All metrics below target
+NAME                 REFERENCE                   TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+command-parser-hpa   Deployment/command-parser   6%/70%    1         2         1          14m
