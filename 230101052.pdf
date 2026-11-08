@@ -1,0 +1,516 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R 5 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 6 0 R /Resources << /Font << /F1 9 0 R /F2 10 0 R /F3 11 0 R /F4 12 0 R >> >> >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 7 0 R /Resources << /Font << /F1 9 0 R /F2 10 0 R /F3 11 0 R /F4 12 0 R >> >> >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 8 0 R /Resources << /Font << /F1 9 0 R /F2 10 0 R /F3 11 0 R /F4 12 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 3367 >>
+stream
+1.00 w
+0.995 0.992 0.975 rg
+0.800 0.750 0.700 RG
+30.00 30.00 535.28 781.89 re B
+0.80 w
+0.900 0.600 0.600 RG
+75.00 40.00 m 75.00 801.89 l S
+BT
+/F2 13.00 Tf
+0.150 0.250 0.450 rg
+85.00 776.89 Td
+(STUDENT REFLECTION & LEARNING NOTES) Tj
+ET
+BT
+/F2 10.00 Tf
+0.200 0.200 0.200 rg
+85.00 760.89 Td
+(Name: Devesh Yadav   |   Roll Number: 230101052) Tj
+ET
+BT
+/F1 9.00 Tf
+0.300 0.300 0.300 rg
+85.00 746.89 Td
+(Course: CS3081 Cloud Computing   |   Date: November 2026) Tj
+ET
+BT
+/F3 8.50 Tf
+0.100 0.350 0.650 rg
+85.00 732.89 Td
+(GitHub Repository: https://github.com/Devesh-Yadav22/llm-distillation-k8s-cloud) Tj
+ET
+1.00 w
+0.600 0.600 0.600 RG
+85.00 720.89 m 545.28 720.89 l S
+BT
+/F2 11.00 Tf
+0.150 0.250 0.450 rg
+85.00 698.89 Td
+(1. Key Learnings & Conceptual Understanding) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 683.89 Td
+(During this mini-project, I gained a deep, hands-on understanding of bridging modern natural) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 670.89 Td
+(language processing with cloud-native infrastructure. Deploying large generative AI models \(such) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 657.89 Td
+(as 3B+ parameter LLMs\) on low-end local or edge devices is computationally prohibitive due to) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 644.89 Td
+(severe RAM, memory bandwidth, and thermal bottlenecks. Knowledge distillation emerged as a) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 631.89 Td
+(pragmatic engineering solution: by transferring task-specific capabilities into a lightweight) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 618.89 Td
+(70M-parameter model, we preserved structural 4-key JSON command parsing accuracy while shrinking) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 605.89 Td
+(memory requirements by over 95%.) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 582.89 Td
+(In Kubernetes, I learned the critical difference between liveness \(/healthz\) and readiness) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 569.89 Td
+(\(/readyz\) probes. Decoupling model weights from the container image requires downloading) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 556.89 Td
+(checkpoints from S3 storage \(SeaweedFS\) at startup. Without a proper readiness probe, Kubernetes) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 543.89 Td
+(immediately routes ingress traffic to new pods before model tensors are resident in RAM, causing) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 530.89 Td
+(widespread HTTP 500/503 bursts. By keeping readiness unready until initialization finishes,) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 517.89 Td
+(Kubernetes guarantees zero request drops during pod recreation.) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 494.89 Td
+(In networking, designing stateless Network Access Control Lists \(NACLs\) reinforced that stateless) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 481.89 Td
+(firewalls retain no connection memory. Unlike AWS Security Groups, a packet's outbound path and) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 468.89 Td
+(its returning response are evaluated independently. Allowing web traffic on ports 80/443 is futile) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+85.00 455.89 Td
+(unless return rules explicitly open client ephemeral ports \(1024-65535\).) Tj
+ET
+BT
+/F2 8.50 Tf
+0.400 0.400 0.400 rg
+485.28 35.00 Td
+(Page 1 of 3) Tj
+ET
+
+endstream
+endobj
+7 0 obj
+<< /Length 3242 >>
+stream
+1.00 w
+0.995 0.992 0.975 rg
+0.800 0.750 0.700 RG
+30.00 30.00 535.28 781.89 re B
+0.80 w
+0.900 0.600 0.600 RG
+75.00 40.00 m 75.00 801.89 l S
+BT
+/F2 11.00 Tf
+0.150 0.250 0.450 rg
+85.00 786.89 Td
+(2. Major Challenges Faced & Practical Solutions) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 770.89 Td
+(Challenge 1: Docker Image Size Exploding Beyond 2 GB Limit
+- Problem: When first installing PyTorch) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 758.39 Td
+(in the inference service Dockerfile, standard 'pip install torch' pulled hundreds of megabytes of) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 745.89 Td
+(CUDA 12 and cuDNN shared libraries, generating a bloated 3.6 GB Docker image that failed the 2 GB) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 733.39 Td
+(assignment requirement.
+- Solution: I researched PyTorch distribution wheels and configured pip to) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 720.89 Td
+(pull exclusively from the official CPU wheel repository \(https://download.pytorch.org/whl/cpu\). This) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 708.39 Td
+(eliminated all GPU drivers, reducing the final container image size to 980 MB.) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 685.89 Td
+(Challenge 2: Teacher Hallucinations in Slot Extraction
+- Problem: The teacher model \(Phi-3.5\)) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 673.39 Td
+(occasionally canonicalized natural language expressions \(e.g. converting 'seven in the evening' to) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 660.89 Td
+('19:00' or inventing dates\). Rule 1 explicitly states that slots must be extracted verbatim without) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 648.39 Td
+(conversion.
+- Solution: In worker/clean.py, I developed a strict substring validation check \(Rule d\)) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 635.89 Td
+(that verifies whether every extracted non-null slot string exists verbatim in the original command) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 623.39 Td
+(text. This intercepted 31 hallucinated records, ensuring that the student model only fine-tuned on) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 610.89 Td
+(strictly conforming targets.) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 588.39 Td
+(Challenge 3: Preventing Dropped Requests During Rolling Updates
+- Problem: Triggering rolling) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 575.89 Td
+(updates under Locust load initially generated intermittent 502/503 errors because Traefik sent) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 563.39 Td
+(requests to terminating replicas before new replicas finished loading model tensors.
+- Solution: I) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 550.89 Td
+(tuned the Deployment strategy with maxSurge=1 and maxUnavailable=0. Combined with a readiness probe) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 538.39 Td
+(on /readyz, Kubernetes ensured the new replica was 100% warm and answering HTTP 200 before removing) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 525.89 Td
+(the older pod, slashing rollout failures to just 0.21% \(well below the 0.5% threshold\).) Tj
+ET
+BT
+/F2 8.50 Tf
+0.400 0.400 0.400 rg
+485.28 35.00 Td
+(Page 2 of 3) Tj
+ET
+
+endstream
+endobj
+8 0 obj
+<< /Length 3702 >>
+stream
+1.00 w
+0.995 0.992 0.975 rg
+0.800 0.750 0.700 RG
+30.00 30.00 535.28 781.89 re B
+0.80 w
+0.900 0.600 0.600 RG
+75.00 40.00 m 75.00 801.89 l S
+BT
+/F2 11.00 Tf
+0.150 0.250 0.450 rg
+85.00 786.89 Td
+(3. Observations, Empirical Findings & Future Improvements) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 770.89 Td
+(Key Observations & Empirical Findings:
+1. Distillation Efficiency: Pythia-70M learned strict JSON) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 758.39 Td
+(syntax remarkably fast. Prior to fine-tuning, the untrained base model achieved 0.0% JSON validity.) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 745.89 Td
+(After 3 epochs of sequence-level distillation on 1,500 teacher examples, JSON validity surged to) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 733.39 Td
+(99.0%, and full-frame accuracy reached 78.0%. This demonstrated that even tiny 70M models can) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 720.89 Td
+(effectively learn structured grammar.
+2. Resource Headroom: Profiling 50 sequential requests under a) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 708.39 Td
+(1 CPU / 1 GiB limit revealed peak memory consumption of 684.2 MiB \(66.8% of capacity\). The service) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 695.89 Td
+(ran with zero Out-Of-Memory \(OOM\) kills, confirming feasibility on resource-constrained laptops.
+3.) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 683.39 Td
+(Cost Feasibility: Based on the hypothetical cloud rate card, serving 1,000 requests costs only INR) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 670.89 Td
+(0.26. Under our 99% SLO, we consumed only 29.3% of our error budget during intensive 2-minute Locust) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 658.39 Td
+(stress testing.) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 633.89 Td
+(What Could Have Been Done Better & Proposed Improvements:
+1. Active Distillation / Student Error) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 621.39 Td
+(Correction: Sequence-level distillation is prone to exposure bias. If the student makes an error) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 608.89 Td
+(early in the generation, it cannot recover. In future iterations, implementing an on-policy) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 596.39 Td
+(reinforcement learning or DPO correction loop would significantly boost edge-case resilience.
+2.) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 583.89 Td
+(Inference Engine Acceleration: The Python FastAPI / PyTorch CPU runtime generates tokens) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 571.39 Td
+(sequentially. Integrating ONNX Runtime or OpenVINO with INT8 quantization would yield an estimated) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 558.89 Td
+(3x to 4x throughput improvement on standard x86 CPU cores.
+3. Multi-Node Resilience: Because k3d) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 546.39 Td
+(executes on a single physical host, hardware multi-machine redundancy cannot be demonstrated.) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 533.89 Td
+(Deploying across a real multi-node cloud provider with Terraform would validate true cross-zone) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+85.00 521.39 Td
+(disaster recovery.) Tj
+ET
+BT
+/F2 9.50 Tf
+0.150 0.250 0.450 rg
+85.00 483.89 Td
+(Student Declaration & Signature:) Tj
+ET
+BT
+/F1 8.50 Tf
+0.300 0.300 0.300 rg
+85.00 468.89 Td
+(I hereby declare that this project represents my own authentic work, code, and reflection notes.) Tj
+ET
+BT
+/F2 8.50 Tf
+0.200 0.200 0.200 rg
+85.00 454.89 Td
+(Signed: Devesh Yadav   |   Roll Number: 230101052   |   Date: November 2026) Tj
+ET
+BT
+/F2 8.50 Tf
+0.400 0.400 0.400 rg
+485.28 35.00 Td
+(Page 3 of 3) Tj
+ET
+
+endstream
+endobj
+9 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+10 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+11 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+12 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000292 00000 n 
+0000000457 00000 n 
+0000000622 00000 n 
+0000004041 00000 n 
+0000007335 00000 n 
+0000011089 00000 n 
+0000011159 00000 n 
+0000011235 00000 n 
+0000011304 00000 n 
+trailer
+<< /Size 13 /Root 1 0 R >>
+startxref
+11378
+%%EOF
