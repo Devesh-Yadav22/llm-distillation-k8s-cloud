@@ -1,0 +1,9 @@
+{
+  "input": 3000,
+  "rejected_a_invalid_json": 25,
+  "rejected_b_bad_keys": 20,
+  "rejected_c_invalid_intent": 20,
+  "rejected_d_slot_not_in_text": 31,
+  "rejected_e_duplicate_command": 50,
+  "kept": 2854
+}
