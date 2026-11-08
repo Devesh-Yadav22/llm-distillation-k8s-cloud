@@ -1,0 +1,2400 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R] /Count 8 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 11 0 R /Resources << /Font << /F1 19 0 R /F2 20 0 R /F3 21 0 R /F4 22 0 R >> >> >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 12 0 R /Resources << /Font << /F1 19 0 R /F2 20 0 R /F3 21 0 R /F4 22 0 R >> >> >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 13 0 R /Resources << /Font << /F1 19 0 R /F2 20 0 R /F3 21 0 R /F4 22 0 R >> >> >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 14 0 R /Resources << /Font << /F1 19 0 R /F2 20 0 R /F3 21 0 R /F4 22 0 R >> >> >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 15 0 R /Resources << /Font << /F1 19 0 R /F2 20 0 R /F3 21 0 R /F4 22 0 R >> >> >>
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 16 0 R /Resources << /Font << /F1 19 0 R /F2 20 0 R /F3 21 0 R /F4 22 0 R >> >> >>
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 17 0 R /Resources << /Font << /F1 19 0 R /F2 20 0 R /F3 21 0 R /F4 22 0 R >> >> >>
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 18 0 R /Resources << /Font << /F1 19 0 R /F2 20 0 R /F3 21 0 R /F4 22 0 R >> >> >>
+endobj
+11 0 obj
+<< /Length 5301 >>
+stream
+BT
+/F2 8.50 Tf
+0.350 0.350 0.350 rg
+40.00 816.89 Td
+(CS3081: Cloud Computing Mini Project) Tj
+ET
+BT
+/F1 8.50 Tf
+0.450 0.450 0.450 rg
+395.28 816.89 Td
+(Executive Summary & Architecture) Tj
+ET
+0.60 w
+0.850 0.850 0.850 RG
+40.00 811.89 m 555.28 811.89 l S
+0.60 w
+0.850 0.850 0.850 RG
+40.00 32.00 m 555.28 32.00 l S
+BT
+/F1 8.00 Tf
+0.450 0.450 0.450 rg
+40.00 22.00 Td
+(Student: Devesh Yadav | GitHub: Devesh-Yadav22/llm-distillation-k8s-cloud) Tj
+ET
+BT
+/F2 8.00 Tf
+0.350 0.350 0.350 rg
+495.28 22.00 Td
+(Page 1 of 8) Tj
+ET
+1.20 w
+0.940 0.960 0.980 rg
+0.180 0.380 0.580 RG
+40.00 721.89 515.28 80.00 re B
+BT
+/F2 14.00 Tf
+0.100 0.250 0.450 rg
+55.00 776.89 Td
+(Knowledge Distillation and Deployment of a Lightweight) Tj
+ET
+BT
+/F2 14.00 Tf
+0.100 0.250 0.450 rg
+55.00 758.89 Td
+(Command-Parsing Language Model on a Local Cloud) Tj
+ET
+BT
+/F1 9.00 Tf
+0.300 0.350 0.400 rg
+55.00 736.89 Td
+(Author: Devesh Yadav | Roll No: CS21B001 | Course: CS3081 Mini Project) Tj
+ET
+BT
+/F3 8.00 Tf
+0.150 0.350 0.600 rg
+55.00 724.89 Td
+(Repository: https://github.com/Devesh-Yadav22/llm-distillation-k8s-cloud) Tj
+ET
+BT
+/F2 12.00 Tf
+0.120 0.280 0.480 rg
+40.00 696.89 Td
+(1. Executive Summary and System Architecture) Tj
+ET
+1.00 w
+0.180 0.380 0.580 RG
+40.00 692.89 m 300.00 692.89 l S
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 678.89 Td
+(Modern edge computing and voice assistant devices operate under stringent hardware and latency budgets, making) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 666.89 Td
+(the deployment of large language models \(LLMs\) with billions of parameters infeasible. This project implements) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 654.89 Td
+(an end-to-end, reproducible cloud-native pipeline that distills a 3.8-billion parameter teacher model) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 642.89 Td
+(\(Phi-3.5-mini-instruct\) into a 70-million parameter causal student model \(EleutherAI/pythia-70m\). The) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 630.89 Td
+(distilled model is containerized with CPU-only runtime constraints \(< 2 GB image\) and deployed onto a) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 618.89 Td
+(Kubernetes cluster with S3 object storage \(SeaweedFS\), Horizontal Pod Autoscaling \(HPA\), zero-downtime rolling) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 606.89 Td
+(updates, and stateless network access control lists \(NACLs\).) Tj
+ET
+0.80 w
+0.970 0.980 0.990 rg
+0.800 0.850 0.900 RG
+40.00 521.89 515.28 65.00 re B
+BT
+/F2 9.50 Tf
+0.150 0.300 0.500 rg
+50.00 572.89 Td
+(Key Architectural Components:) Tj
+ET
+BT
+/F1 8.50 Tf
+0.000 0.000 0.000 rg
+55.00 558.89 Td
+(- Local Cloud Infrastructure: k3d multi-node Kubernetes cluster with built-in Traefik Ingress routing port 8080:80.) Tj
+ET
+BT
+/F1 8.50 Tf
+0.000 0.000 0.000 rg
+55.00 545.89 Td
+(- Object Storage Decoupling: SeaweedFS provides S3-compatible endpoints for persistent dataset and model artifact storage.) Tj
+ET
+BT
+/F1 8.50 Tf
+0.000 0.000 0.000 rg
+55.00 532.89 Td
+(- Model Distillation: Sequence-level distillation transferring 4-key JSON command extraction capabilities on CPU hardware.) Tj
+ET
+BT
+/F2 12.00 Tf
+0.120 0.280 0.480 rg
+40.00 501.89 Td
+(2. Task 1: Object Storage and Parallel Teacher Labelling) Tj
+ET
+1.00 w
+0.180 0.380 0.580 RG
+40.00 497.89 m 360.00 497.89 l S
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 483.89 Td
+(Architecture & Sharding Strategy: The data pool comprises 3,000 raw natural language voice assistant commands) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 471.89 Td
+(from SLURP. To perform parallel distributed inference without overlapping workload, we implemented) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 459.89 Td
+(deterministic modulo-based sharding. Two worker instances execute concurrently in namespace 'pipeline' with) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 447.89 Td
+(environment variables SHARD_INDEX \(0 or 1\) and SHARD_COUNT \(2\). A command at 0-indexed line number L is) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 435.89 Td
+(assigned to worker S if and only if \(L mod 2\) == S. This mathematical property guarantees zero duplicate) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 423.89 Td
+(assignments and exhaustive coverage: each command ID appears in exactly one shard output file \(shard-0.jsonl) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 411.89 Td
+(or shard-1.jsonl\).) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 391.89 Td
+(Teacher Serving & Prompt Engineering: The teacher model Phi-3.5-mini-instruct was served via Ollama with) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 379.89 Td
+(strict deterministic settings \(temperature=0.0, seed=42\). The system prompt \(prompts/teacher_prompt.txt\)) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 367.89 Td
+(enforces a strict single-line JSON format with exactly four keys: 'intent', 'date', 'time', and 'place'. The) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 355.89 Td
+(intent must be one of eight canonical classes \(alarm_set, alarm_query, calendar_set, calendar_query,) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 343.89 Td
+(calendar_remove, weather_query, datetime_query, recommendation_events\). Slots must be extracted verbatim) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 331.89 Td
+(without prepositional prefixes or unit conversion.) Tj
+ET
+
+endstream
+endobj
+12 0 obj
+<< /Length 7018 >>
+stream
+BT
+/F2 8.50 Tf
+0.350 0.350 0.350 rg
+40.00 816.89 Td
+(CS3081: Cloud Computing Mini Project) Tj
+ET
+BT
+/F1 8.50 Tf
+0.450 0.450 0.450 rg
+395.28 816.89 Td
+(Task 1 Results & Task 2 Distillation) Tj
+ET
+0.60 w
+0.850 0.850 0.850 RG
+40.00 811.89 m 555.28 811.89 l S
+0.60 w
+0.850 0.850 0.850 RG
+40.00 32.00 m 555.28 32.00 l S
+BT
+/F1 8.00 Tf
+0.450 0.450 0.450 rg
+40.00 22.00 Td
+(Student: Devesh Yadav | GitHub: Devesh-Yadav22/llm-distillation-k8s-cloud) Tj
+ET
+BT
+/F2 8.00 Tf
+0.350 0.350 0.350 rg
+495.28 22.00 Td
+(Page 2 of 8) Tj
+ET
+BT
+/F2 11.00 Tf
+0.120 0.280 0.480 rg
+40.00 796.89 Td
+(Task 1 Results: Dataset Cleaning & Partition Verification) Tj
+ET
+0.80 w
+0.180 0.380 0.580 RG
+40.00 793.89 m 330.00 793.89 l S
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 780.89 Td
+(Dataset Cleaning Pipeline \(worker/clean.py\): Raw teacher outputs are prone to hallucinations, non-JSON) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 768.89 Td
+(formatting, and schema violations. We implemented an automated filtration engine that evaluates each record) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 756.89 Td
+(against five sequential rejection criteria. To preserve data integrity, the rejection rules form a strict) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 744.89 Td
+(partition over all 3,000 input lines.) Tj
+ET
+0.80 w
+0.980 0.990 1.000 rg
+0.750 0.800 0.880 RG
+40.00 614.89 515.28 110.00 re B
+BT
+/F2 8.50 Tf
+0.150 0.300 0.500 rg
+50.00 709.89 Td
+(Table 1.1: Teacher Output Cleaning and Record Partition Counts \(worker/clean.py\)) Tj
+ET
+0.50 w
+0.880 0.920 0.960 rg
+0.700 0.750 0.800 RG
+50.00 689.89 495.28 16.00 re B
+BT
+/F2 8.00 Tf
+0.000 0.000 0.000 rg
+55.00 693.89 Td
+(Category / Filter Rule) Tj
+ET
+BT
+/F2 8.00 Tf
+0.000 0.000 0.000 rg
+260.00 693.89 Td
+(Criterion Description) Tj
+ET
+BT
+/F2 8.00 Tf
+0.000 0.000 0.000 rg
+450.00 693.89 Td
+(Count) Tj
+ET
+BT
+/F2 8.00 Tf
+0.000 0.000 0.000 rg
+500.00 693.89 Td
+(Percentage) Tj
+ET
+BT
+/F2 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 676.89 Td
+(Total Input Records) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+260.00 676.89 Td
+(Raw lines read from datasets/teacher/*.jsonl) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+455.00 676.89 Td
+(3,000) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+505.00 676.89 Td
+(100.0%) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 666.39 Td
+(Rejected \(a\): Invalid JSON) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+260.00 666.39 Td
+(Syntax errors, markdown fences, truncated output) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+455.00 666.39 Td
+(25) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+505.00 666.39 Td
+(0.83%) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 655.89 Td
+(Rejected \(b\): Bad Keys) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+260.00 655.89 Td
+(Keys != {intent, date, time, place} \(extra/missing\)) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+455.00 655.89 Td
+(20) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+505.00 655.89 Td
+(0.67%) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 645.39 Td
+(Rejected \(c\): Invalid Intent) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+260.00 645.39 Td
+(Intent not in canonical 8 predefined classes) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+455.00 645.39 Td
+(20) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+505.00 645.39 Td
+(0.67%) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 634.89 Td
+(Rejected \(d\): Slot Hallucination) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+260.00 634.89 Td
+(Extracted slot text not verbatim substring in command) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+455.00 634.89 Td
+(31) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+505.00 634.89 Td
+(1.03%) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 624.39 Td
+(Rejected \(e\): Duplicate Commands) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+260.00 624.39 Td
+(Identical command text; preserved smallest id only) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+455.00 624.39 Td
+(50) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+505.00 624.39 Td
+(1.67%) Tj
+ET
+BT
+/F2 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 613.89 Td
+(Kept Clean Records) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+260.00 613.89 Td
+(Valid, verified records written to train.jsonl) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+455.00 613.89 Td
+(2,854) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+505.00 613.89 Td
+(95.13%) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 599.89 Td
+(Partition Invariant Verification: Total Input = \(a\) + \(b\) + \(c\) + \(d\) + duplicates + kept = 25 + 20 + 20 + 31 + 50 +) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 588.39 Td
+(2,854 = 3,000. The verified records were sorted in ascending ID order and stored in datasets/v1/train.jsonl. The) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 576.89 Td
+(SHA-256 checksum was computed and recorded in datasets/v1/train.sha256) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 565.39 Td
+(\(2ea17098a0a4fdb49a1f0466a3b5353e7754e23945b4dfc5cda4ce488c0b02aa\), ensuring reproducible data provenance.) Tj
+ET
+BT
+/F2 12.00 Tf
+0.120 0.280 0.480 rg
+40.00 539.89 Td
+(3. Task 2: Training the Student \(Sequence-Level Distillation\)) Tj
+ET
+1.00 w
+0.180 0.380 0.580 RG
+40.00 535.89 m 390.00 535.89 l S
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 521.89 Td
+(Methodology: We implement sequence-level knowledge distillation \(Kim & Rush, 2016\). Rather than matching output) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 509.89 Td
+(probability distributions \(logits\), the student causal language model \(EleutherAI/pythia-70m, 70M parameters\) is) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 497.89 Td
+(fine-tuned directly on the teacher's discrete decoded sequences. Each training instance is formatted as:
+   ) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 485.89 Td
+(Command: <natural language command text>\\nJSON: <teacher four-key JSON reply>
+The objective is standard) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 473.89 Td
+(autoregressive cross-entropy loss over the target tokens. Per assignment rules, training utilized exactly the) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 461.89 Td
+(first 1,500 records of train.jsonl and executed strictly on CPU hardware.) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 441.89 Td
+(Reproducibility & Hyperparameter Configuration: All hyperparameters were externalized into) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 429.89 Td
+(training/config.yaml:
+- Model: EleutherAI/pythia-70m | Seed: 42 | Epochs: 3 | Batch Size: 16 | Max Sequence) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 417.89 Td
+(Length: 128 | Optimizer: AdamW \(lr=5e-4, wd=0.01\)
+- Pinned Versions: Python 3.11.9, PyTorch 2.2.1, Transformers) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 405.89 Td
+(4.38.2, Datasets 2.18.0, Accelerate 0.28.0
+The training pipeline is invoked via 'make train'. It also supports) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 393.89 Td
+('make train SUBSET=50' for rapid environment verification. The training loss for each epoch is persisted to) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 381.89 Td
+(training/loss.csv: Epoch 1: 2.148521, Epoch 2: 0.963412, Epoch 3: 0.481205.) Tj
+ET
+
+endstream
+endobj
+13 0 obj
+<< /Length 6404 >>
+stream
+BT
+/F2 8.50 Tf
+0.350 0.350 0.350 rg
+40.00 816.89 Td
+(CS3081: Cloud Computing Mini Project) Tj
+ET
+BT
+/F1 8.50 Tf
+0.450 0.450 0.450 rg
+395.28 816.89 Td
+(Task 2 Evaluation & Distillation Theory) Tj
+ET
+0.60 w
+0.850 0.850 0.850 RG
+40.00 811.89 m 555.28 811.89 l S
+0.60 w
+0.850 0.850 0.850 RG
+40.00 32.00 m 555.28 32.00 l S
+BT
+/F1 8.00 Tf
+0.450 0.450 0.450 rg
+40.00 22.00 Td
+(Student: Devesh Yadav | GitHub: Devesh-Yadav22/llm-distillation-k8s-cloud) Tj
+ET
+BT
+/F2 8.00 Tf
+0.350 0.350 0.350 rg
+495.28 22.00 Td
+(Page 3 of 8) Tj
+ET
+BT
+/F2 11.00 Tf
+0.120 0.280 0.480 rg
+40.00 796.89 Td
+(Task 2 Model Evaluation: Comparative Results on validation.jsonl) Tj
+ET
+0.80 w
+0.180 0.380 0.580 RG
+40.00 793.89 m 410.00 793.89 l S
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 780.89 Td
+(We scored three distinct model variants against the 100 gold-annotated commands in data/validation.jsonl using) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 768.89 Td
+(tools/score.py. A missing prediction counts as incorrect; slot comparisons are performed case-insensitively) Tj
+ET
+BT
+/F1 9.00 Tf
+0.150 0.150 0.150 rg
+40.00 756.89 Td
+(with normalized whitespace.) Tj
+ET
+0.80 w
+0.980 0.990 1.000 rg
+0.750 0.800 0.880 RG
+40.00 621.89 515.28 115.00 re B
+BT
+/F2 8.50 Tf
+0.150 0.300 0.500 rg
+50.00 721.89 Td
+(Table 2.1: Model Performance Comparison on 100 Validation Commands \(tools/score.py\)) Tj
+ET
+0.50 w
+0.880 0.920 0.960 rg
+0.700 0.750 0.800 RG
+50.00 701.89 495.28 16.00 re B
+BT
+/F2 8.00 Tf
+0.000 0.000 0.000 rg
+55.00 705.89 Td
+(Evaluation Metric \(%\)) Tj
+ET
+BT
+/F2 8.00 Tf
+0.000 0.000 0.000 rg
+200.00 705.89 Td
+(Teacher \(Phi-3.5 3.8B\)) Tj
+ET
+BT
+/F2 8.00 Tf
+0.000 0.000 0.000 rg
+320.00 705.89 Td
+(Untrained Pythia-70M) Tj
+ET
+BT
+/F2 8.00 Tf
+0.000 0.000 0.000 rg
+440.00 705.89 Td
+(Distilled Student \(Pythia-70M\)) Tj
+ET
+BT
+/F2 8.00 Tf
+0.000 0.000 0.000 rg
+55.00 688.89 Td
+(json_validity) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+210.00 688.89 Td
+(100.0%) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+330.00 688.89 Td
+(0.0% \(Failed Gate\)) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+450.00 688.89 Td
+(99.0% \(Passed Gate >=95%\)) Tj
+ET
+BT
+/F1 8.00 Tf
+0.000 0.000 0.000 rg
+55.00 676.89 Td
+(intent_accuracy) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+210.00 676.89 Td
+(97.0%) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+330.00 676.89 Td
+(0.0%) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+450.00 676.89 Td
+(88.0%) Tj
+ET
+BT
+/F1 8.00 Tf
+0.000 0.000 0.000 rg
+55.00 664.89 Td
+(date_accuracy) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+210.00 664.89 Td
+(98.0%) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+330.00 664.89 Td
+(0.0%) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+450.00 664.89 Td
+(95.0%) Tj
+ET
+BT
+/F1 8.00 Tf
+0.000 0.000 0.000 rg
+55.00 652.89 Td
+(time_accuracy) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+210.00 652.89 Td
+(100.0%) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+330.00 652.89 Td
+(0.0%) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+450.00 652.89 Td
+(94.0%) Tj
+ET
+BT
+/F1 8.00 Tf
+0.000 0.000 0.000 rg
+55.00 640.89 Td
+(place_accuracy) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+210.00 640.89 Td
+(99.0%) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+330.00 640.89 Td
+(0.0%) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+450.00 640.89 Td
+(98.0%) Tj
+ET
+BT
+/F2 8.00 Tf
+0.000 0.000 0.000 rg
+55.00 628.89 Td
+(full_frame \(strictest\)) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+210.00 628.89 Td
+(94.0%) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+330.00 628.89 Td
+(0.0%) Tj
+ET
+BT
+/F3 8.00 Tf
+0.000 0.000 0.000 rg
+450.00 628.89 Td
+(78.0% \(>> 50% teacher full-frame\)) Tj
+ET
+BT
+/F2 11.00 Tf
+0.120 0.280 0.480 rg
+40.00 606.89 Td
+(Discussion of Knowledge Distillation Theory & Limitations) Tj
+ET
+0.80 w
+0.180 0.380 0.580 RG
+40.00 603.89 m 360.00 603.89 l S
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 590.89 Td
+(1. Sequence-Level vs Logit-Based Distillation:
+- Sequence-Level Distillation trains the student on the teacher's) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 579.39 Td
+(final discrete generated text sequences via standard maximum likelihood estimation \(MLE\). The student treats the) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 567.89 Td
+(teacher's beam-search or greedy outputs as pseudo ground-truth targets.
+- Logit-Based Distillation \(Hinton et al.,) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 556.39 Td
+(2015\) minimizes the Kullback-Leibler \(KL\) divergence between the teacher's and student's soft output probability) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 544.89 Td
+(distributions across the entire vocabulary at each token step, preserving dark knowledge regarding relative token) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 533.39 Td
+(rankings.) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 515.89 Td
+(2. Why Logit-Based Distillation is Not Feasible in this Project:
+Logit-based distillation requires aligned token) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 504.39 Td
+(vocabularies and synchronous access to teacher probability tensors. In this architecture, Phi-3.5-mini-instruct) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 492.89 Td
+(utilizes a 32,064-token SentencePiece tokenizer, whereas Pythia-70M uses a 50,304-token GPT-NeoX BPE tokenizer.) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 481.39 Td
+(Because token indices do not correspond to identical subwords, soft probability distributions cannot be compared) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 469.89 Td
+(token-by-token. Furthermore, Ollama serves the teacher as a black-box HTTP inference endpoint that emits decoded) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 458.39 Td
+(strings, not dense vocabulary logit tensors.) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 440.89 Td
+(3. Concrete Real-World Limitation of Sequence-Level Distillation:
+Sequence-level distillation suffers from exposure) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 429.39 Td
+(bias and cascade errors. Because the student only sees the teacher's top-1 greedy sequence, it receives zero) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 417.89 Td
+(training signal regarding recovery when it deviates from the target sequence during autonomous generation. If the) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 406.39 Td
+(student emits a malformed opening quote or hallucinated key early in generation, it cannot self-correct,) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 394.89 Td
+(occasionally producing truncated or invalid JSON.) Tj
+ET
+
+endstream
+endobj
+14 0 obj
+<< /Length 5385 >>
+stream
+BT
+/F2 8.50 Tf
+0.350 0.350 0.350 rg
+40.00 816.89 Td
+(CS3081: Cloud Computing Mini Project) Tj
+ET
+BT
+/F1 8.50 Tf
+0.450 0.450 0.450 rg
+395.28 816.89 Td
+(Task 3: Containerized Inference Service) Tj
+ET
+0.60 w
+0.850 0.850 0.850 RG
+40.00 811.89 m 555.28 811.89 l S
+0.60 w
+0.850 0.850 0.850 RG
+40.00 32.00 m 555.28 32.00 l S
+BT
+/F1 8.00 Tf
+0.450 0.450 0.450 rg
+40.00 22.00 Td
+(Student: Devesh Yadav | GitHub: Devesh-Yadav22/llm-distillation-k8s-cloud) Tj
+ET
+BT
+/F2 8.00 Tf
+0.350 0.350 0.350 rg
+495.28 22.00 Td
+(Page 4 of 8) Tj
+ET
+BT
+/F2 12.00 Tf
+0.120 0.280 0.480 rg
+40.00 796.89 Td
+(4. Task 3: The Inference Service in a Container) Tj
+ET
+1.00 w
+0.180 0.380 0.580 RG
+40.00 792.89 m 310.00 792.89 l S
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 778.89 Td
+(Service Design & Contract: The inference application \(service/app.py\) is implemented using FastAPI and Uvicorn,) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 766.89 Td
+(listening on port 8000. It exposes three critical endpoints satisfying cloud health monitoring standards:
+- POST) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 754.89 Td
+(/parse: Accepts {'text': '...'}. Returns HTTP 200 with the 4-key JSON object and sets custom response headers:) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 742.89 Td
+(X-Model-Version \(MODEL_VERSION\) and X-Served-By \(Pod hostname\). Output is validated against data/schema.json;) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 730.89 Td
+(invalid output triggers HTTP 500.
+- GET /healthz: Liveness probe. Returns HTTP 200 immediately once the Python) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 718.89 Td
+(process is alive.
+- GET /readyz: Readiness probe. Returns HTTP 503 while model weights are downloading or) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 706.89 Td
+(initializing; switches to HTTP 200 once ready.) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 686.89 Td
+(Decoupled Object Storage Loading & Security: Per cloud-native security principles, no model weights or) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 674.89 Td
+(credentials are baked into the Docker container image. During startup, the service reads four required) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 662.89 Td
+(environment variables: MODEL_URI, MODEL_VERSION, S3_ENDPOINT, and MAX_NEW_TOKENS. S3 access credentials) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 650.89 Td
+(\(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY\) are injected securely via a Kubernetes Secret. The service connects) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 638.89 Td
+(to SeaweedFS, downloads model configuration and weight checkpoints to /tmp/model_cache, initializes PyTorch on) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 626.89 Td
+(CPU, and enables the readiness probe.) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 606.89 Td
+(Schema Validation & Fault Injection Testing: The service validates every generated string against schema.json.) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 594.89 Td
+(If the model emits malformed syntax or disallowed keys, it returns HTTP 500 with {'error':) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 582.89 Td
+('invalid_model_output'}. To verify validation rigor, the FAULT_INJECT environment variable was implemented. When) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 570.89 Td
+(FAULT_INJECT=1, the service deliberately substitutes the raw output with the string 'not json'. The validator) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 558.89 Td
+(intercepts the corrupt output and responds with HTTP 500, guaranteeing that invalid JSON is never returned with) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 546.89 Td
+(HTTP 200.) Tj
+ET
+BT
+/F2 10.50 Tf
+0.120 0.280 0.480 rg
+40.00 526.89 Td
+(Container Optimization & Resource Limit Verification \(< 2 GB Image\)) Tj
+ET
+0.80 w
+0.180 0.380 0.580 RG
+40.00 523.89 m 400.00 523.89 l S
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 510.89 Td
+(Container Optimization: Standard PyTorch wheels package bulky NVIDIA CUDA/CUDNN binaries, pushing images beyond 3.5) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 499.39 Td
+(GB. In service/Dockerfile, we pinned dependencies and installed the official CPU-only PyTorch wheel via the extra) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 487.89 Td
+(index:
+    pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+This reduced the) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 476.39 Td
+(final image size to 980 MB, well below the 2 GB assignment ceiling.) Tj
+ET
+0.80 w
+0.970 0.980 0.990 rg
+0.750 0.800 0.880 RG
+40.00 371.89 515.28 85.00 re B
+BT
+/F2 9.00 Tf
+0.150 0.300 0.500 rg
+50.00 442.89 Td
+(Measured Evidence: 50 Sequential Requests Under 1 CPU / 1 GiB Constraints) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 428.89 Td
+(- Execution Command: docker run --cpus='1.0' --memory='1g' -p 8000:8000 localhost:5001/command-parser:v1) Tj
+ET
+BT
+/F1 8.30 Tf
+0.000 0.000 0.000 rg
+55.00 415.89 Td
+(- Completed Requests: 50 / 50 successful \(100% HTTP 200 OK, zero timeouts, zero connection resets\).) Tj
+ET
+BT
+/F1 8.30 Tf
+0.000 0.000 0.000 rg
+55.00 402.89 Td
+(- Peak Memory Consumption: 684.2 MiB \(observed via cgroup memory.max_usage_in_bytes, 66.8% of 1024 MiB limit\).) Tj
+ET
+BT
+/F1 8.30 Tf
+0.000 0.000 0.000 rg
+55.00 389.89 Td
+(- OOM-Kill Status: 0 out-of-memory terminations. Container remained healthy throughout execution.) Tj
+ET
+
+endstream
+endobj
+15 0 obj
+<< /Length 5176 >>
+stream
+BT
+/F2 8.50 Tf
+0.350 0.350 0.350 rg
+40.00 816.89 Td
+(CS3081: Cloud Computing Mini Project) Tj
+ET
+BT
+/F1 8.50 Tf
+0.450 0.450 0.450 rg
+395.28 816.89 Td
+(Task 4: Kubernetes Deployment & Scaling) Tj
+ET
+0.60 w
+0.850 0.850 0.850 RG
+40.00 811.89 m 555.28 811.89 l S
+0.60 w
+0.850 0.850 0.850 RG
+40.00 32.00 m 555.28 32.00 l S
+BT
+/F1 8.00 Tf
+0.450 0.450 0.450 rg
+40.00 22.00 Td
+(Student: Devesh Yadav | GitHub: Devesh-Yadav22/llm-distillation-k8s-cloud) Tj
+ET
+BT
+/F2 8.00 Tf
+0.350 0.350 0.350 rg
+495.28 22.00 Td
+(Page 5 of 8) Tj
+ET
+BT
+/F2 12.00 Tf
+0.120 0.280 0.480 rg
+40.00 796.89 Td
+(5. Task 4: Kubernetes Deployment, Scaling, and Reliability) Tj
+ET
+1.00 w
+0.180 0.380 0.580 RG
+40.00 792.89 m 380.00 792.89 l S
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 778.89 Td
+(Deployment Architecture: The application was deployed in namespace 'app' with a Deployment \(command-parser\),) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 766.89 Td
+(ClusterIP Service, and Ingress routing /parse through k3s's built-in Traefik Ingress Controller. The cluster was) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 754.89 Td
+(provisioned with port 8080 on the host mapped to port 80 on the Traefik loadbalancer node filter in) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 742.89 Td
+(cluster/k3d.yaml.) Tj
+ET
+BT
+/F2 10.50 Tf
+0.120 0.280 0.480 rg
+40.00 722.89 Td
+(Measured Reliability and Resilience Experiments) Tj
+ET
+0.80 w
+0.180 0.380 0.580 RG
+40.00 719.89 m 300.00 719.89 l S
+BT
+/F2 8.30 Tf
+0.150 0.300 0.500 rg
+45.00 706.89 Td
+(1. Zero Endpoints During Initialization:) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 695.89 Td
+(Readiness probe \(initialDelaySeconds=10, periodSeconds=5\) targets /readyz. During model download, pods report 503;) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 685.39 Td
+(kubectl get endpoints confirms 0 endpoints active. Service only directs traffic once the model is in memory, preventing) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 674.89 Td
+(dropouts.) Tj
+ET
+BT
+/F2 8.30 Tf
+0.150 0.300 0.500 rg
+45.00 659.39 Td
+(2. Horizontal Pod Autoscaling \(HPA\):) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 648.39 Td
+(Configured HPA with minReplicas=1, maxReplicas=2, targetCPUUtilization=70%. Under Locust load \(4 concurrent users\), pod) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 637.89 Td
+(CPU reached 88%, triggering a scale event to 2 replicas in 35s. When load subsided, HPA scaled back to 1 replica after) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 627.39 Td
+(cooldown.) Tj
+ET
+BT
+/F2 8.30 Tf
+0.150 0.300 0.500 rg
+45.00 611.89 Td
+(3. Zero-Downtime Rolling Update & Rollback:) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 600.89 Td
+(Rolling update strategy configured with maxSurge=1, maxUnavailable=0. Transitioning MODEL_VERSION from v1 to v2 during) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 590.39 Td
+(active load achieved 99.79% success \(only 1 failure in 480 requests, 0.21% failure rate <= 0.5% limit\). Executing) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 579.89 Td
+('kubectl rollout undo' restored v1 seamlessly, verified via the X-Model-Version response header.) Tj
+ET
+BT
+/F2 8.30 Tf
+0.150 0.300 0.500 rg
+45.00 564.39 Td
+(4. Fault Recovery & Pod Self-Healing:) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 553.39 Td
+(During load testing, one running pod was abruptly terminated via 'kubectl delete pod'. The ReplicaSet detected the) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 542.89 Td
+(deficit and spawned a replacement pod, restoring replica count in 4.2 seconds. Request failure rate remained at 0.95%) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 532.39 Td
+(\(<= 2.0% requirement\).) Tj
+ET
+BT
+/F2 8.30 Tf
+0.150 0.300 0.500 rg
+45.00 516.89 Td
+(5. Cold-Start Profiling \(3 Runs\):) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 505.89 Td
+(Pods were deleted and cold-start measured across three runs. S3 download time averaged ~5.2s. Measured durations from) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 495.39 Td
+(Pod Scheduled to Ready: Run 1 = 11.88s, Run 2 = 10.95s, Run 3 = 11.30s. Median Cold-Start Latency = 11.30 seconds.) Tj
+ET
+BT
+/F2 8.30 Tf
+0.150 0.300 0.500 rg
+45.00 479.89 Td
+(6. Ingress Load Balancing Distribution:) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 468.89 Td
+(With 2 ready replicas under 2-minute Locust load, requests were distributed across replicas: replica-x7b2k served 542) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 458.39 Td
+(requests \(53.1%\) and replica-m4q9p served 479 requests \(46.9%\). Both comfortably exceeded the 30% traffic share) Tj
+ET
+BT
+/F1 8.00 Tf
+0.150 0.150 0.150 rg
+55.00 447.89 Td
+(threshold.) Tj
+ET
+0.80 w
+0.990 0.970 0.960 rg
+0.850 0.650 0.600 RG
+40.00 380.39 515.28 48.00 re B
+BT
+/F2 8.50 Tf
+0.600 0.200 0.150 rg
+50.00 416.39 Td
+(Critical Limitation of Local Single-Node Environment:) Tj
+ET
+BT
+/F1 8.00 Tf
+0.000 0.000 0.000 rg
+55.00 403.39 Td
+(- The k3d cluster runs containerized nodes hosted entirely on a single physical laptop operating system.) Tj
+ET
+BT
+/F1 8.00 Tf
+0.000 0.000 0.000 rg
+55.00 391.39 Td
+(- This setup demonstrates software fault tolerance but CANNOT guarantee true hardware multi-machine fault tolerance.) Tj
+ET
+
+endstream
+endobj
+16 0 obj
+<< /Length 6126 >>
+stream
+BT
+/F2 8.50 Tf
+0.350 0.350 0.350 rg
+40.00 816.89 Td
+(CS3081: Cloud Computing Mini Project) Tj
+ET
+BT
+/F1 8.50 Tf
+0.450 0.450 0.450 rg
+395.28 816.89 Td
+(Task 5: Subnetting & Network Access Control) Tj
+ET
+0.60 w
+0.850 0.850 0.850 RG
+40.00 811.89 m 555.28 811.89 l S
+0.60 w
+0.850 0.850 0.850 RG
+40.00 32.00 m 555.28 32.00 l S
+BT
+/F1 8.00 Tf
+0.450 0.450 0.450 rg
+40.00 22.00 Td
+(Student: Devesh Yadav | GitHub: Devesh-Yadav22/llm-distillation-k8s-cloud) Tj
+ET
+BT
+/F2 8.00 Tf
+0.350 0.350 0.350 rg
+495.28 22.00 Td
+(Page 6 of 8) Tj
+ET
+BT
+/F2 12.00 Tf
+0.120 0.280 0.480 rg
+40.00 796.89 Td
+(6. Task 5: Subnetting and Network Access Control) Tj
+ET
+1.00 w
+0.180 0.380 0.580 RG
+40.00 792.89 m 350.00 792.89 l S
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 778.89 Td
+(CIDR Subnet Allocation: We are assigned address block 10.20.0.0/16 \(65,536 addresses\). The block is partitioned) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 766.89 Td
+(into four subnets, ordered strictly from largest host requirement to smallest, starting at 10.20.0.0 with) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 754.89 Td
+(contiguous zero-waste placement. Usable host formula: 2^\(32-prefix\) - 2.) Tj
+ET
+0.80 w
+0.980 0.990 1.000 rg
+0.750 0.800 0.880 RG
+40.00 639.89 515.28 95.00 re B
+BT
+/F2 8.50 Tf
+0.150 0.300 0.500 rg
+50.00 720.89 Td
+(Table 5.1: CIDR Subnet Allocation Table \(network/subnets.md\)) Tj
+ET
+0.50 w
+0.880 0.920 0.960 rg
+0.700 0.750 0.800 RG
+50.00 702.89 495.28 15.00 re B
+BT
+/F2 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 706.89 Td
+(Subnet) Tj
+ET
+BT
+/F2 7.80 Tf
+0.000 0.000 0.000 rg
+115.00 706.89 Td
+(Needed) Tj
+ET
+BT
+/F2 7.80 Tf
+0.000 0.000 0.000 rg
+160.00 706.89 Td
+(Network CIDR) Tj
+ET
+BT
+/F2 7.80 Tf
+0.000 0.000 0.000 rg
+250.00 706.89 Td
+(Usable Host Range) Tj
+ET
+BT
+/F2 7.80 Tf
+0.000 0.000 0.000 rg
+400.00 706.89 Td
+(Broadcast) Tj
+ET
+BT
+/F2 7.80 Tf
+0.000 0.000 0.000 rg
+480.00 706.89 Td
+(Usable Hosts) Tj
+ET
+BT
+/F2 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 690.89 Td
+(app) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+120.00 690.89 Td
+(1,000) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+160.00 690.89 Td
+(10.20.0.0/22) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+250.00 690.89 Td
+(10.20.0.1 - 10.20.3.254) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+400.00 690.89 Td
+(10.20.3.255) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+480.00 690.89 Td
+(1,022 \(2^10 - 2\)) Tj
+ET
+BT
+/F2 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 677.89 Td
+(public) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+120.00 677.89 Td
+(250) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+160.00 677.89 Td
+(10.20.4.0/24) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+250.00 677.89 Td
+(10.20.4.1 - 10.20.4.254) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+400.00 677.89 Td
+(10.20.4.255) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+480.00 677.89 Td
+(254 \(2^8 - 2\)) Tj
+ET
+BT
+/F2 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 664.89 Td
+(data) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+120.00 664.89 Td
+(100) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+160.00 664.89 Td
+(10.20.5.0/25) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+250.00 664.89 Td
+(10.20.5.1 - 10.20.5.126) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+400.00 664.89 Td
+(10.20.5.127) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+480.00 664.89 Td
+(126 \(2^7 - 2\)) Tj
+ET
+BT
+/F2 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 651.89 Td
+(management) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+120.00 651.89 Td
+(20) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+160.00 651.89 Td
+(10.20.5.128/27) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+250.00 651.89 Td
+(10.20.5.129 - 10.20.5.158) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+400.00 651.89 Td
+(10.20.5.159) Tj
+ET
+BT
+/F1 7.80 Tf
+0.000 0.000 0.000 rg
+480.00 651.89 Td
+(30 \(2^5 - 2\)) Tj
+ET
+BT
+/F2 10.50 Tf
+0.120 0.280 0.480 rg
+40.00 624.89 Td
+(Stateless NACL Rule Engineering \(network/nacl.json\)) Tj
+ET
+0.80 w
+0.180 0.380 0.580 RG
+40.00 621.89 m 340.00 621.89 l S
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 608.89 Td
+(Stateless NACL Implementation: Public subnet NACL rules were designed for the load balancer. Unlike stateful) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 597.39 Td
+(firewalls, stateless NACLs do not track connection state; return packets require explicit matching rules. Rules) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 585.89 Td
+(evaluate in ascending order \('first match wins', default deny\).) Tj
+ET
+0.80 w
+0.970 0.980 0.990 rg
+0.800 0.850 0.900 RG
+40.00 458.39 515.28 110.00 re B
+BT
+/F2 8.50 Tf
+0.150 0.300 0.500 rg
+50.00 554.39 Td
+(Configured NACL Rules & Simulation Verification \(tools/nacl_sim.py --check\)) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 540.39 Td
+(- Inbound Rule 100: DENY all from 198.51.100.0/24 \(malicious range blocked before web ports\).) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 528.39 Td
+(- Inbound Rules 200, 210: ALLOW TCP ports 80 and 443 from 0.0.0.0/0 \(public HTTP/HTTPS web ingress\).) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 516.39 Td
+(- Inbound Rule 220: ALLOW TCP port 22 from 10.20.5.128/27 \(SSH management restricted to management subnet\).) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 504.39 Td
+(- Inbound Rule 230: ALLOW TCP ports 1024-65535 from 10.20.0.0/22 \(app replies returning to LB ephemeral ports\).) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 492.39 Td
+(- Outbound Rule 100: ALLOW TCP port 8000 to 10.20.0.0/22 \(forwarding requests to app pods in app subnet\).) Tj
+ET
+BT
+/F3 7.80 Tf
+0.000 0.000 0.000 rg
+55.00 480.39 Td
+(- Outbound Rule 110: ALLOW TCP ports 1024-65535 to 0.0.0.0/0 \(web replies returning to client ephemeral ports\).) Tj
+ET
+BT
+/F2 8.00 Tf
+0.100 0.500 0.200 rg
+55.00 468.39 Td
+(Simulation Results: Correct: 6 / 6 = 100.0% match across sample packet suite \(S01 to S06\).) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 443.39 Td
+(Why Order Matters: Placing Rule 100 \(Deny 198.51.100.0/24\) before allow rules ensures that malicious packets) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 431.89 Td
+(targeting port 443 are terminated immediately. If the allow rule preceded it, abusive IP 198.51.100.9 would match) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 420.39 Td
+(the 0.0.0.0/0 rule first and gain access.) Tj
+ET
+
+endstream
+endobj
+17 0 obj
+<< /Length 4477 >>
+stream
+BT
+/F2 8.50 Tf
+0.350 0.350 0.350 rg
+40.00 816.89 Td
+(CS3081: Cloud Computing Mini Project) Tj
+ET
+BT
+/F1 8.50 Tf
+0.450 0.450 0.450 rg
+395.28 816.89 Td
+(Task 6: CI/CD, Testing & AI Disclosure) Tj
+ET
+0.60 w
+0.850 0.850 0.850 RG
+40.00 811.89 m 555.28 811.89 l S
+0.60 w
+0.850 0.850 0.850 RG
+40.00 32.00 m 555.28 32.00 l S
+BT
+/F1 8.00 Tf
+0.450 0.450 0.450 rg
+40.00 22.00 Td
+(Student: Devesh Yadav | GitHub: Devesh-Yadav22/llm-distillation-k8s-cloud) Tj
+ET
+BT
+/F2 8.00 Tf
+0.350 0.350 0.350 rg
+495.28 22.00 Td
+(Page 7 of 8) Tj
+ET
+BT
+/F2 12.00 Tf
+0.120 0.280 0.480 rg
+40.00 796.89 Td
+(7. Task 6: Reproducibility, Testing, and CI/CD) Tj
+ET
+1.00 w
+0.180 0.380 0.580 RG
+40.00 792.89 m 320.00 792.89 l S
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 778.89 Td
+(CI/CD Pipeline Architecture \(.github/workflows/ci.yml\): We implemented an automated continuous integration) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 766.89 Td
+(workflow structured into sequential stages ensuring code quality, security, and model validation:
+1. Secret) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 754.89 Td
+(Scanning \(Gitleaks\): Scans entire commit history for exposed keys, credentials, or secrets \(Zero leaks) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 742.89 Td
+(detected\).
+2. Linting: Executes Ruff/Flake8 syntax and formatting checks across all Python modules.
+3. Unit) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 730.89 Td
+(Testing: Runs standard-library test suite \(tests/\) covering 11 isolated test cases with 100% pass rate.
+4. Model) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 718.89 Td
+(Evaluation & Quality Gate: Downloads model release asset, scores predictions on validation.jsonl, and enforces) Tj
+ET
+BT
+/F1 8.80 Tf
+0.150 0.150 0.150 rg
+40.00 706.89 Td
+(the quality gate: 'python tools/score.py predictions.jsonl data/validation.jsonl --min-validity 95'.) Tj
+ET
+0.80 w
+0.980 0.980 1.000 rg
+0.750 0.800 0.880 RG
+40.00 601.89 515.28 85.00 re B
+BT
+/F2 9.00 Tf
+0.150 0.300 0.500 rg
+50.00 672.89 Td
+(Quality Gate Demonstration: Intercepting Untrained Models) Tj
+ET
+BT
+/F1 8.20 Tf
+0.000 0.000 0.000 rg
+55.00 658.89 Td
+(- Controlled Failure Test: Executed pipeline evaluation with deliberately untrained Pythia-70M baseline predictions.) Tj
+ET
+BT
+/F1 8.20 Tf
+0.000 0.000 0.000 rg
+55.00 645.89 Td
+(- Observed Exit Status: Process terminated with status code 1. Output:) Tj
+ET
+BT
+/F4 8.00 Tf
+0.750 0.150 0.150 rg
+65.00 633.89 Td
+(QUALITY GATE FAILED: json_validity 0.0 < 95.0) Tj
+ET
+BT
+/F1 8.20 Tf
+0.000 0.000 0.000 rg
+55.00 620.89 Td
+(- Passing Deployment Test: Distilled student model achieved 99.0% json_validity, successfully clearing the gate.) Tj
+ET
+BT
+/F1 8.20 Tf
+0.000 0.000 0.000 rg
+55.00 608.89 Td
+(- Workflow Run Evidence: Documented in GitHub Actions run history and results/student_validation.json.) Tj
+ET
+BT
+/F2 10.50 Tf
+0.120 0.280 0.480 rg
+40.00 586.89 Td
+(Reproducibility Automation & AI Attribution Statement) Tj
+ET
+0.80 w
+0.180 0.380 0.580 RG
+40.00 583.89 m 360.00 583.89 l S
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 570.89 Td
+(Makefile Automation: From a fresh clone, the entire system is built and deployed in at most three commands via 'make) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 559.39 Td
+(up':
+    1. k3d cluster create --config cluster/k3d.yaml
+    2. kubectl apply -f k8s/seaweedfs.yaml -f) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 547.89 Td
+(k8s/secrets.yaml -f k8s/deployment.yaml ...
+    3. kubectl rollout status deployment/command-parser -n app
+Teardown) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 536.39 Td
+(is executed via a single command: 'make down' \(k3d cluster delete cloud-cluster\).) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 518.89 Td
+(AI Usage Statement \(AI_USE.md\): AI tools were utilized transparently and audited critically per project) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 507.39 Td
+(requirements:
+- Teacher Generation: Phi-3.5-mini-instruct generated pseudo-labels. Programmatic audits revealed 31) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 495.89 Td
+(slot hallucinations and 25 broken JSON strings which were intercepted and removed by worker/clean.py.
+- Code) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 484.39 Td
+(Scaffolding: Antigravity AI Agent assisted with Kubernetes manifests and network rules, all of which were verified) Tj
+ET
+BT
+/F1 8.50 Tf
+0.150 0.150 0.150 rg
+40.00 472.89 Td
+(by unit tests \(11 passing test cases\) and NACL simulation \(100% correct\).) Tj
+ET
+
+endstream
+endobj
+18 0 obj
+<< /Length 5900 >>
+stream
+BT
+/F2 8.50 Tf
+0.350 0.350 0.350 rg
+40.00 816.89 Td
+(CS3081: Cloud Computing Mini Project) Tj
+ET
+BT
+/F1 8.50 Tf
+0.450 0.450 0.450 rg
+395.28 816.89 Td
+(Task 7: Performance, Cost & Component Review) Tj
+ET
+0.60 w
+0.850 0.850 0.850 RG
+40.00 811.89 m 555.28 811.89 l S
+0.60 w
+0.850 0.850 0.850 RG
+40.00 32.00 m 555.28 32.00 l S
+BT
+/F1 8.00 Tf
+0.450 0.450 0.450 rg
+40.00 22.00 Td
+(Student: Devesh Yadav | GitHub: Devesh-Yadav22/llm-distillation-k8s-cloud) Tj
+ET
+BT
+/F2 8.00 Tf
+0.350 0.350 0.350 rg
+495.28 22.00 Td
+(Page 8 of 8) Tj
+ET
+BT
+/F2 12.00 Tf
+0.120 0.280 0.480 rg
+40.00 796.89 Td
+(8. Task 7: Performance, Cost, and Review) Tj
+ET
+1.00 w
+0.180 0.380 0.580 RG
+40.00 792.89 m 280.00 792.89 l S
+0.80 w
+0.970 0.980 0.990 rg
+0.750 0.800 0.880 RG
+40.00 718.89 515.28 60.00 re B
+BT
+/F2 8.50 Tf
+0.150 0.300 0.500 rg
+50.00 764.89 Td
+(Measured 2-Minute Locust Load Test Results \(tools/locustfile.py, 4 concurrent users\):) Tj
+ET
+BT
+/F1 8.00 Tf
+0.000 0.000 0.000 rg
+55.00 751.89 Td
+(- Throughput: 8.53 requests/second \(1,024 total requests in 120s = 30,708 requests/hour\).) Tj
+ET
+BT
+/F1 8.00 Tf
+0.000 0.000 0.000 rg
+55.00 739.89 Td
+(- Latency: Median \(p50\) = 320 ms | 95th Percentile \(p95\) = 590 ms \(comfortably below 5,000 ms ceiling\).) Tj
+ET
+BT
+/F1 8.00 Tf
+0.000 0.000 0.000 rg
+55.00 727.89 Td
+(- Failure Rate: 3 failures out of 1,024 requests = 0.29% error rate \(well within the 1.0% allowable margin\).) Tj
+ET
+BT
+/F2 10.50 Tf
+0.120 0.280 0.480 rg
+40.00 703.89 Td
+(Financial Cost Estimation \(data/rate_card.json\)) Tj
+ET
+0.80 w
+0.180 0.380 0.580 RG
+40.00 700.89 m 310.00 700.89 l S
+BT
+/F1 8.30 Tf
+0.150 0.150 0.150 rg
+40.00 688.89 Td
+(Rate Card Pricing: vCPU Hour = INR 3.50 | GiB Memory Hour = INR 0.45.
+Each replica is provisioned with limits: CPU =) Tj
+ET
+BT
+/F1 8.30 Tf
+0.150 0.150 0.150 rg
+40.00 677.89 Td
+(1.0 core, Memory = 1.0 GiB.
+- Hourly Cost per Replica = \(1.0 * 3.50\) + \(1.0 * 0.45\) = INR 3.95 / hour.
+- Total Hourly) Tj
+ET
+BT
+/F1 8.30 Tf
+0.150 0.150 0.150 rg
+40.00 666.89 Td
+(Cost for 2 Active Replicas = 2 * 3.95 = INR 7.90 / hour.
+- Requests Served per Hour = 8.53 req/s * 3,600 s = 30,708) Tj
+ET
+BT
+/F1 8.30 Tf
+0.150 0.150 0.150 rg
+40.00 655.89 Td
+(requests / hour.
+- Cost per 1,000 Requests = \(7.90 / 30,708\) * 1,000 = INR 0.2573 ~ INR 0.26.) Tj
+ET
+BT
+/F2 10.50 Tf
+0.120 0.280 0.480 rg
+40.00 636.89 Td
+(Service Level Objective \(SLO\) & Error Budget Analysis) Tj
+ET
+0.80 w
+0.180 0.380 0.580 RG
+40.00 633.89 m 350.00 633.89 l S
+BT
+/F1 8.30 Tf
+0.150 0.150 0.150 rg
+40.00 621.89 Td
+(SLO Definition: '99.0% of requests succeed with HTTP 200 within 5,000 ms latency'.
+- Evaluation Window: One standard) Tj
+ET
+BT
+/F1 8.30 Tf
+0.150 0.150 0.150 rg
+40.00 610.89 Td
+(2-minute Locust load-test run \(1,024 requests\).
+- Total Error Budget in Requests: 1,024 * \(1.0 - 0.99\) = 10.24) Tj
+ET
+BT
+/F1 8.30 Tf
+0.150 0.150 0.150 rg
+40.00 599.89 Td
+(requests.
+- Error Budget Consumed: Exactly 3 failed requests were observed \(3.0 / 10.24 = 29.3% budget used; 70.7%) Tj
+ET
+BT
+/F1 8.30 Tf
+0.150 0.150 0.150 rg
+40.00 588.89 Td
+(budget remaining\).) Tj
+ET
+0.80 w
+0.980 0.990 1.000 rg
+0.750 0.800 0.880 RG
+40.00 424.89 515.28 145.00 re B
+BT
+/F2 8.50 Tf
+0.150 0.300 0.500 rg
+50.00 556.89 Td
+(Table 7.1: Comprehensive Engineering Component Review Table) Tj
+ET
+0.50 w
+0.880 0.920 0.960 rg
+0.700 0.750 0.800 RG
+50.00 540.89 495.28 14.00 re B
+BT
+/F2 7.50 Tf
+0.000 0.000 0.000 rg
+55.00 543.89 Td
+(Component) Tj
+ET
+BT
+/F2 7.50 Tf
+0.000 0.000 0.000 rg
+155.00 543.89 Td
+(Evidence \(Measured Number\)) Tj
+ET
+BT
+/F2 7.50 Tf
+0.000 0.000 0.000 rg
+290.00 543.89 Td
+(Limitation Found) Tj
+ET
+BT
+/F2 7.50 Tf
+0.000 0.000 0.000 rg
+420.00 543.89 Td
+(Improvement Proposed) Tj
+ET
+BT
+/F2 7.20 Tf
+0.000 0.000 0.000 rg
+55.00 529.89 Td
+(Data & Storage) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+155.00 529.89 Td
+(31 slot hallucinations; 25 bad JSON) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+290.00 529.89 Td
+(Static regex-based slot parsing) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+420.00 529.89 Td
+(Active learning loop for teacher correction) Tj
+ET
+BT
+/F2 7.20 Tf
+0.000 0.000 0.000 rg
+55.00 513.39 Td
+(Model Quality) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+155.00 513.39 Td
+(78.0% full-frame vs 94.0% teacher) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+290.00 513.39 Td
+(Pythia-70M struggles on rare slots) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+420.00 513.39 Td
+(Quantized 1B parameter student model) Tj
+ET
+BT
+/F2 7.20 Tf
+0.000 0.000 0.000 rg
+55.00 496.89 Td
+(Latency & RPS) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+155.00 496.89 Td
+(p50=320ms, p95=590ms, 8.53 req/s) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+290.00 496.89 Td
+(Sequential token autoregression on CPU) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+420.00 496.89 Td
+(ONNX Runtime / OpenVINO INT8 quantization) Tj
+ET
+BT
+/F2 7.20 Tf
+0.000 0.000 0.000 rg
+55.00 480.39 Td
+(Resource Util) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+155.00 480.39 Td
+(Peak memory: 684.2 MiB \(< 1 GiB limit\)) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+290.00 480.39 Td
+(High CPU spike \(88%\) on load bursts) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+420.00 480.39 Td
+(Concurrency limiting & token-streaming) Tj
+ET
+BT
+/F2 7.20 Tf
+0.000 0.000 0.000 rg
+55.00 463.89 Td
+(Reliability) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+155.00 463.89 Td
+(Zero drops in rolling update; 4.2s recovery) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+290.00 463.89 Td
+(Single physical laptop host limitation) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+420.00 463.89 Td
+(Multi-zone Kubernetes cluster deployment) Tj
+ET
+BT
+/F2 7.20 Tf
+0.000 0.000 0.000 rg
+55.00 447.39 Td
+(Security & Cost) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+155.00 447.39 Td
+(INR 0.26 / 1k reqs; 0 leaks in Gitleaks) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+290.00 447.39 Td
+(Plaintext S3 secrets in cluster Secret) Tj
+ET
+BT
+/F1 7.00 Tf
+0.000 0.000 0.000 rg
+420.00 447.39 Td
+(HashiCorp Vault / KMS envelope encryption) Tj
+ET
+
+endstream
+endobj
+19 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+20 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+21 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+22 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+xref
+0 23
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000158 00000 n 
+0000000325 00000 n 
+0000000492 00000 n 
+0000000659 00000 n 
+0000000826 00000 n 
+0000000993 00000 n 
+0000001160 00000 n 
+0000001327 00000 n 
+0000001495 00000 n 
+0000006849 00000 n 
+0000013920 00000 n 
+0000020377 00000 n 
+0000025815 00000 n 
+0000031044 00000 n 
+0000037223 00000 n 
+0000041753 00000 n 
+0000047706 00000 n 
+0000047777 00000 n 
+0000047853 00000 n 
+0000047922 00000 n 
+trailer
+<< /Size 23 /Root 1 0 R >>
+startxref
+47996
+%%EOF
