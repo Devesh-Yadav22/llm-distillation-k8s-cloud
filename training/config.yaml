@@ -1,0 +1,19 @@
+# training/config.yaml: Hyperparameters and environment configuration for Pythia-70M distillation
+model_name: "EleutherAI/pythia-70m"
+random_seed: 42
+learning_rate: 0.0005
+batch_size: 16
+epochs: 3
+max_seq_length: 128
+weight_decay: 0.01
+warmup_ratio: 0.1
+output_dir: "models/v1"
+
+# Pinned library versions for reproducibility
+library_versions:
+  python: "3.11.9"
+  torch: "2.2.1"
+  transformers: "4.38.2"
+  datasets: "2.18.0"
+  accelerate: "0.28.0"
+

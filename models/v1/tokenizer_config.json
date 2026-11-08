@@ -1,0 +1,14 @@
+{
+  "add_bos_token": false,
+  "add_eos_token": false,
+  "add_prefix_space": false,
+  "added_tokens_decoder": {},
+  "bos_token": "<|endoftext|>",
+  "clean_up_tokenization_spaces": true,
+  "eos_token": "<|endoftext|>",
+  "model_max_length": 2048,
+  "pad_token": "<|endoftext|>",
+  "tokenizer_class": "GPTNeoXTokenizer",
+  "unk_token": "<|endoftext|>"
+}
+
