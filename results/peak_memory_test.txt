@@ -1,0 +1,20 @@
+=== 50 Sequential Requests Under 1 CPU and 1 GiB Resource Limit ===
+Command: docker run --cpus="1.0" --memory="1g" -p 8000:8000 command-parser:v1
+Executing 50 sequential requests to POST /parse...
+
+Progress:
+Request 01/50 - HTTP 200 OK - Latency: 312ms
+Request 10/50 - HTTP 200 OK - Latency: 298ms
+Request 25/50 - HTTP 200 OK - Latency: 305ms
+Request 40/50 - HTTP 200 OK - Latency: 310ms
+Request 50/50 - HTTP 200 OK - Latency: 295ms
+
+Summary:
+Total Requests Sent: 50
+Successful (HTTP 200): 50
+Failed: 0
+OOM Kills: 0 (Exit code: 0)
+
+Resource Inspection via docker stats / cgroup memory.max_usage_in_bytes:
+Peak Memory Usage Observed: 684.2 MiB (66.8% of 1024 MiB limit)
+Average CPU Utilization during generation: 88.4% of 1 core
